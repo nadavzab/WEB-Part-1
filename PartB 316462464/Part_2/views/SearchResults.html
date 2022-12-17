@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>    Search Results </title>
+    <link rel="icon" href="../static/Images/OrgLOGO.svg">
+    <link rel="stylesheet" href="../static/styles.css">
+    <script defer src="../static/app.js"></script>
+    <script type="module" src="../static/map.js"></script>
+</head>
+
+<body id="SearchResults" onload="loadMap()">
+    <header>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="HomePage.html" id="navbar__logo">  <img src="../static/Images/OrgLOGO.svg" alt="LOGO"
+                    width="100px" height="100px">   Doggy Mister</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="HomePage.html" class="navbar__links" id="home-page">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="About.html" class="navbar__links" id="about-page">About</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="SearchPage.html" class="navbar__links" id="search-page">Search</a>
+                    </li>
+                </ul>
+            
+            </div>
+        </nav>
+    </header>
+
+    <div class="Search-Results-page">
+        <header id="Search-Results-header">
+            <h1>Search Results</h1>
+        </header>
+        </div>
+
+        <div id="map"></div>
+
+        <footer class="site-footer">
+            <div id="footer-content">
+              <p>Doggy-Mister</p>
+            </div>
+          </footer>
+
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/googlemaps-js-api-loader/1.15.1/index.min.js"
+      integrity="sha512-0JztDLW4t/jkz73TcDrwF+bUNT9YACIr7ozzcAncWyYip9Svv6p8aimlZH2XL5StEvwQW31ko9KQEa+fNrSuSg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+</body>
+</html>

@@ -1,0 +1,655 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background:#142786;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar__logo{
+    background-color: #5be22a;
+    background-image: linear-gradient(to top, #257607 0%, #3dbb0f 100%) ;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight:bold;
+}
+
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+
+.navbar_item{
+    height: 80px;
+}
+
+.navbar__links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+        color: white;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #1a4d07;
+    background: -webkit-linear-gradient(to right, #586e50, #457035, #1a4d07);
+    background: linear-gradient(to right, #38b50a, #2c800d, #216e05);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.button:hover{
+    color: #21087b;
+    transition: all 0.3s ease;
+}
+
+.navbar__links:hover {
+    color: #257607;
+    transition: all 0.3s ease;
+}
+
+/********************************************************* SIGN UP ***********************************************************************/
+
+#signUpPage{
+    background-image: url(../static/Images/Dog1.jpg);
+    background-position: right bottom;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+
+.sign-up-form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+    
+}
+
+.sign-up-form label{
+    font-weight:bold ;
+    text-align:center;
+    display: block;
+}
+
+
+.sign-up-form input[type="text"], .sign-up-form textarea, .sign-up-form input[type="email"], .sign-up-form input[type="password"], .sign-up-form input[type="Date"]
+    {
+        text-align:center;
+        margin: auto;
+        padding: 8px;
+        width: 15%;
+    border-radius: 10px;
+}
+
+.sign-up-form select{
+    text-align:center;
+        margin: auto;
+    padding: 8px;
+    width: 15%;
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+
+
+.sign-up-form input[type="submit"]{
+    backround-color: green;
+    margin: auto;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+
+}
+
+.sign-up-form input[type="submit"]:hover{
+    background-color: #24079b;
+    transition: all 0.3s ease;
+}
+
+
+/*.form-group{
+    text-align:center;
+}*/
+
+.gender{
+    text-align:center;
+    border-radius: 10px;
+}
+
+#pic1{
+    display: flex;
+    width: 450px;
+     height: 500px;
+     float: right;
+    position: absolute;
+    bottom:0px;
+    right: 0px;
+}
+
+.pic2{
+    display: flex;
+    width:100%;
+     height: 500px;   
+     justify-content: center;
+    position:absolute;
+    bottom:0px;
+    right: 0px;
+}
+
+.pic3{
+    display: flex;
+    width:100%;
+     height: 430px;   
+     justify-content: left;
+    position:absolute;
+    bottom:345px;
+    left: 506px;
+}
+
+.button2{ /* SUBMIT BUTTON*/
+    background-color: #2f920b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+
+}
+
+.SearchBtn{
+    background-color: #2f920b;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: flex;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.SearchBtn:hover{
+    background-color: #142786;
+}
+
+
+/********************************************************* HOME PAGE****************************************************************/
+
+.Home_page_cont{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: #142786;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.Home_page_cont{
+    max-width: 960px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+#HomeP{
+    height: 100px;
+}
+
+#HomeP h1{
+    font-size:40px;
+    line-height: 1.3;
+    position: relative;
+    animation: heading;
+    animation-duration: 3s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes heading{
+    0%{
+        top:-50px;
+    }
+    100%{
+        top: 30px
+    }
+}
+
+.content{
+
+    position: relative;
+    animation: content;
+    animation-duration: 3s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes content {
+    0%{
+        left:-1000px;
+    }
+    100%{
+        left:0;
+    }
+}
+
+.btn{
+    display: inline-block;
+    color: green;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: green 1px solid;
+    border-radius: 30px;
+    margin-top: 40px;
+    opacity: 0;
+    animation: btn;
+    animation-duration: 1s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes btn {
+
+     0%{
+        opacity: 0;
+    }
+    100%{
+        opacity:100%;
+    }
+}
+
+.btn:hover{
+    color:white;
+    background-color: green;
+    transition: all 0.3s ease;
+}
+
+
+/**************************** ABOUT PAGE**************************************************/
+
+.about-page{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: #142786;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.about-page{
+    max-width: 960px;
+    margin: auto;
+    padding: 0 30px;
+        min-height: calc(100vh - 158px);
+}
+
+#about-page{
+    height: 100px;
+}
+
+#about-page h1{
+    font-size:40px;
+    line-height: 1.3;
+    position: relative;
+    animation: heading;
+    animation-duration: 3s;
+    animation-fill-mode:forwards;
+}
+
+
+.btn{
+    display: inline-block;
+    color: green;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: green 1px solid;
+    border-radius: 30px;
+    margin-top: 40px;
+    opacity: 0;
+    animation: btn;
+    animation-duration: 1s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+.btn:hover{
+    color:white;
+    background-color: green;
+    transition: all 0.3s ease;
+}
+
+
+
+/********************************* SIGN IN PAGE*************************************************/
+
+sign-in-form{
+    padding: 50px;
+    margin: 50px;
+    
+}
+
+#Sign-In-page{
+    background-image: url(../static/Images/Dog2.PNG);
+    background-repeat: no-repeat;
+    background-position: 50px bottom;
+    background-position-y:  bottom;
+    background-size: 80%;
+}
+
+.sign-in-form label{
+    font-weight:bold ;
+    text-align:center;
+    display: block;
+}
+
+
+
+.sign-in-form input[type="submit"]{
+    backround-color: green;
+    margin: auto;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+
+}
+.button3 { 
+    background-color: #2f920b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+        margin: auto;
+
+}
+
+.sign-in-form input[type="submit"]:hover{
+    background-color: #24079b;
+    transition: all 0.3s ease;
+}
+
+.sign-in-form input[type="text"],  .sign-in-form input[type="password"]
+    {
+        text-align:center;
+        margin: auto;
+    padding: 8px;
+    width: 15%;
+    border-radius: 10px;
+}
+
+.Sign-in-page{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: green; 
+    text-align: center;
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 0 30px;
+}
+#sign-in-header{
+    height: 300px;
+    }
+
+    /************************************************ SEARCH PAGE*************************************************************************/
+
+
+    .Search-form{
+        padding: 10px;
+        margin: 12px;
+        min-height: calc(100vh - 268px);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #Search-Page-header{
+        color: green;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+
+    #SearchPage{
+        background-image: url(../static/Images/Dog3.png);
+        background-repeat: no-repeat;
+        background-position: 240px 100px;
+        background-size: 300px, 200px
+   }
+   
+    
+    .Search-form label{
+        font-weight:bold ;
+        text-align:center;
+        display: block;
+    }
+    
+    
+    .Search-form input[type="text"], .Search-form textarea, .Search-form input[type="text"] , .Search-form input[type="number"] , .Search-form input[type="number"] ,  .Search-form input[type="number"] 
+        {
+            text-align:center;
+            margin: auto;
+            padding: 8px;
+            width: 100%;
+            max-width: 250px;
+            min-width: 250px;
+            border-radius: 10px;
+    }
+    
+    
+    .Search-form input[type="Submit"]{
+        backround-color: green;
+        margin: auto;
+        color: white;
+        padding: 10px 30px;
+        border: none;
+    
+    }
+    
+    .Search-form input[type="Submit"]:hover{
+        background-color: #24079b;
+        transition: all 0.3s ease;
+    }
+
+    
+    .form-group{
+        text-align:center;
+    }
+    
+    .button2 { 
+        background-color: #2f920b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+    
+    }
+    
+   
+
+.DoggyMister .footer{
+    background-color: green;
+}
+
+
+/******************************* SEARCH RESULTS PAGE *********************************************/
+
+
+#Search-Results-header{
+    height: 50px;
+    color: green;
+    text-align: center;
+
+    }
+
+
+
+    /************************************************ USER PAGE*********************************************/
+
+
+    #User-Page-header{
+        color: green;
+        text-align: center;
+        }
+
+
+       #UserPage{
+            background-image: url(../static/Images/Dog5.jpg);
+            background-repeat: no-repeat;
+            background-position: left bottom ;
+            background-size: 80%
+       }
+
+        
+   /* .my-user-form{
+        padding: 50px;
+        margin: 50px;
+        
+    }*/
+    
+    .my-user-form label{
+        font-weight:bold ;
+        text-align:center;
+        display: block;
+    }
+    
+    
+    .my-user-form input[type="text"], .my-user-form textarea, .my-user-form input[type="email"], .my-user-form input[type="Date"], .my-user-form input[type="number"]
+        {
+            text-align:center;
+            margin: auto;
+            padding: 8px;
+            width: 15%;    
+        border-radius: 10px;
+        justify-content: space-evenly;
+    }
+    
+    .my-user-form select{
+        text-align:center;
+            margin: auto;
+        padding: 8px;
+        width: 15%;
+        border-radius: 10px;
+        border-width: 2px;
+    }
+    
+    
+    .my-user-form input[type="submit"]{
+        backround-color: green;
+        margin: auto;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+    
+    }
+    
+    .my-user-form input[type="submit"]:hover{
+        background-color: #24079b;
+        transition: all 0.3s ease;
+    }
+    
+    
+    .form-group{
+        text-align:center;
+    }
+    
+    .gender{
+        text-align:center;
+        border-radius: 10px;
+    }
+
+
+    .site-footer{
+        background-color:#142786;
+        color:white;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        margin-top:auto;
+        position: bottom;
+    }
+
+    .sign-in-form {
+        min-height: calc(100vh - 267px);
+    }
+
+    .container {
+        min-height: calc(100vh - 237px);
+    }
+
+
+    #map {
+        width: 100vw;
+        height: calc(100vh - 190px);
+        display: block;
+    }

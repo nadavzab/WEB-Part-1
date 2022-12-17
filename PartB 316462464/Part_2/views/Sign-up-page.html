@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>    Sign Up </title>
+    <link rel="icon" href="../static/Images/OrgLOGO.svg">
+    <link rel="stylesheet" href="../static/styles.css">
+    <script defer src="../static/app.js"></script>
+</head>
+<body id="signUpPage" onload="initialize_min_date()">
+    <header>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="HomePage.html" id="navbar__logo">  <img src="../static/Images/OrgLOGO.svg" alt="LOGO" width="100px" height="100px">   Doggy Mister</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="HomePage.html" class="navbar__links" id="home-page">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="About.html" class="navbar__links" id="about-page">About</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="SearchPage.html" class="navbar__links" id="search-page">Search</a>
+                    </li>
+                </ul>
+            
+            </div>
+        </nav>
+    </header>
+    
+    
+    
+    <!-- <div class="pictures">
+    
+</div> -->
+
+<div class="Sign-in-page">
+    <div id="Sign-in-title">
+        <h1>Sign Up</h1>
+    </div>
+    </div>
+
+    
+    
+    
+
+
+
+
+<div class="container">
+    <section class="signUp-page">
+        <form action="Sign-up-page.html" class="sign-up-form" onsubmit="return check_inputs('Subscibed succesfully!')" method="post">
+            <div class="form-group">
+                <label for="full_name">Name:</label>
+                <input type="text" id="full_name" name="full_name" value="" placeholder="Enter full name.." required>
+                <p id="full_name_error"></p>
+            </div>
+            
+            
+            <div class="form-group">
+                <label for="user_email">Email:</label>
+                <input type="email" id="user_email" name="user_email" placeholder="aaa@mail.com" required>
+            </div>
+            
+            
+            <div class="form-group">
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="pass" placeholder="*********" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 characters or more" required>
+            </div>
+            
+            
+            <div class="form-group">
+                <label for="Bdate">Birth Date:</label>
+                <input type="date" id="Bdate" name="Bdate" required>
+            </div>
+            
+            
+            <div class="form-group">
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="" selected disabled>Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="user_type">User Type:</label>
+                <select id="user_type" name="user_type" required>
+                    <option value="" selected disabled>User Type</option>
+                    <option value="Consumer">Consumer</option>
+                    <option value="doggy-sitter">Doggy-sitter</option>
+                </select>
+            </div>
+
+            <input type="submit" class="button2" value="Submit">
+            
+        </form>
+
+        
+    </section>
+</div>
+
+
+
+
+
+<footer class="site-footer">
+    <div id="footer-content">
+      <p>Doggy-Mister</p>
+    </div>
+  </footer>
+
+
+</body>
+</html>
