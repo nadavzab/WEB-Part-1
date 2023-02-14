@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Search Results</title>
+        <link rel="icon" href="../static/Images/OrgLOGO.svg" />
+        <link rel="stylesheet" href="../static/styles.css" />
+        <script defer src="../static/app.js"></script>
+        <script type="module" src="../static/map.js"></script>
+    </head>
+
+    <body id="search-results" onload="loadMap()">
+        <div class="Search-Results-page">
+            <header id="Search-Results-header">
+                <h1>Search Results</h1>
+            </header>
+        </div>
+
+        <div class="map-container">
+            <div id="doggy-misters">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fullname</th>
+                            <th>Email</th>
+                            <th>Birthdate</th>
+                            <th>Gender</th>
+                            <th>Address</th>
+                            <th>Comments</th>
+                        </tr>
+                    </thead>
+                    <tbody id="doggy-misters-tbody"></tbody>
+                </table>
+            </div>
+            <div id="map"></div>
+        </div>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/googlemaps-js-api-loader/1.15.1/index.min.js"
+            integrity="sha512-0JztDLW4t/jkz73TcDrwF+bUNT9YACIr7ozzcAncWyYip9Svv6p8aimlZH2XL5StEvwQW31ko9KQEa+fNrSuSg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </body>
+</html>

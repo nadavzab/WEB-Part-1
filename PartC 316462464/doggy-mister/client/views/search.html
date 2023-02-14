@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Search</title>
+        <link rel="icon" href="../static/Images/OrgLOGO.svg" />
+        <link rel="stylesheet" href="../static/styles.css" />
+        <script defer src="../static/app.js"></script>
+        <script type="module" src="../static/map.js"></script>
+    </head>
+
+    <body id="search">
+        <header id="Search-Page-header">
+            <h1>Search Page</h1>
+        </header>
+
+        <div class="Search-form">
+            <div class="form-group">
+                <label>Max-Distance:</label>
+                <input type="number" id="max-distance" placeholder="Enter max relevant dist.." />
+            </div>
+
+            <div class="form-group">
+                <label>Max Cost:</label>
+                <input type="number" id="max-cost" placeholder="By $" />
+            </div>
+
+            <div class="form-group">
+                <label>Dog Size:</label>
+                <input type="number" id="dog-size" placeholder="By cm" />
+            </div>
+
+            <div class="form-group">
+                <label>Required Exp.</label>
+                <input type="number" id="experience" placeholder="By years" />
+            </div>
+
+            <button class="button search-btn" onclick="search(event)">Search</button>
+        </div>
+
+        <div id="map" style="display: none;"></div>
+
+                <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/googlemaps-js-api-loader/1.15.1/index.min.js"
+            integrity="sha512-0JztDLW4t/jkz73TcDrwF+bUNT9YACIr7ozzcAncWyYip9Svv6p8aimlZH2XL5StEvwQW31ko9KQEa+fNrSuSg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyk6v-3Lqx7qfcxUNpH6Cwflik_ktbwSo&callback=loadMap&v=weekly"
+      defer
+    ></script>
+    </body>
+</html>

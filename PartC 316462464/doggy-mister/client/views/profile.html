@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My User</title>
+        <link rel="icon" href="../static/Images/OrgLOGO.svg" />
+        <link rel="stylesheet" href="../static/styles.css" />
+        <script defer src="../static/app.js"></script>
+    </head>
+
+    <body id="user">
+        <div class="User-Page-heder">
+            <header id="User-Page-header">
+                <h1>My Profile</h1>
+            </header>
+        </div>
+
+        <div class="my-user-form" id="my-user-form">
+            <div class="form-group">
+                <label for="full_name">Name:</label>
+                <input
+                    type="text"
+                    id="full_name"
+                    name="full_name"
+                    value=""
+                    placeholder="Enter full name.."
+                    required
+                />
+            </div>
+            <br />
+
+            <div class="form-group">
+                <label for="user_email">Email:</label>
+                <input
+                    type="email"
+                    id="user_email"
+                    name="user_email"
+                    placeholder="aaa@mail.com"
+                    required
+                />
+            </div>
+            <br />
+
+            <div class="form-group">
+                <label for="pass">Password:</label>
+                <input
+                    type="password"
+                    id="pass"
+                    name="pass"
+                    placeholder="*********"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 characters or more"
+                    required
+                />
+            </div>
+            <br />
+
+            <div class="form-group">
+                <label for="Bdate">Birth Date:</label>
+                <input type="date" id="Bdate" name="Bdate" required />
+            </div>
+            <br />
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required />
+            </div>
+            <br />
+
+            <div class="form-group">
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments"></textarea>
+            </div>
+            <br />
+
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="" selected disabled>Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <br />
+
+            <div class="form-group">
+                <label for="user_type">User Type:</label>
+                <select id="user_type" name="user_type" required>
+                    <option value="" selected disabled>User Type</option>
+                    <option value="Consumer">Consumer</option>
+                    <option value="doggy-sitter">Doggy-sitter</option>
+                </select>
+            </div>
+            <br />
+
+            <div id="cost-input" class="form-group">
+                <label>How much do you charge for an hour?</label>
+                <input type="number" id="cost" placeholder="50-150$" />
+            </div>
+            <br />
+
+            <div id="experience-input" class="form-group">
+                <label>How many years of experience do you have?</label>
+                <input type="number" id="experience" placeholder="0-30 years" />
+            </div>
+            <br />
+
+            <div class="buttons">
+                <button class="button2 update-btn">Update</button>
+                <button class="button2 remove-btn">Delete Profile</button>
+            </div>
+        </div>
+    </body>
+</html>
