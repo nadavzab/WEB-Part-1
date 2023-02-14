@@ -1,0 +1,76 @@
+NPM MODULES:
+ - express
+ - MySQL
+ - cors
+ - body-parser
+ - nodemon
+
+ROUTES:
+/sign-in.html
+/index.html
+/profile.html
+/search.html
+/search-results.html
+/about.html
+/sign-up.html
+
+TABLES CREATION SYNTAX:
+initDb = () => {
+    conn.query(
+        `CREATE DATABASE IF NOT EXISTS web;`,
+        function (err, data, fields) {
+            if (err) {
+                throw new Error(err.message);
+            } else {
+                console.log({
+                    status: "success",
+                    message: "database web created!",
+                });
+            }
+        }
+    );
+
+    conn.query(
+        `CREATE TABLE IF NOT EXISTS web.users (
+            id INT NOT NULL AUTO_INCREMENT,
+            password VARCHAR(25) NOT NULL ,
+            fullname VARCHAR(25) NOT NULL ,
+            email VARCHAR(25) NOT NULL ,
+            birthdate VARCHAR(25) NOT NULL ,
+            gender VARCHAR(10) NOT NULL ,
+            address VARCHAR(50) NOT NULL ,
+            user_type VARCHAR(25) NOT NULL ,
+            comments VARCHAR(1000) NULL ,
+            PRIMARY KEY (id)
+        );`,
+        function (err, data, fields) {
+            if (err) {
+                throw new Error(err.message);
+            } else {
+                console.log({
+                    status: "success",
+                    message: "users table created!",
+                });
+            }
+        }
+    );
+
+    conn.query(
+        `CREATE TABLE IF NOT EXISTS web.doggy_misters (
+            user_id INT NOT NULL AUTO_INCREMENT,
+            cost INT NOT NULL ,
+            experience INT NOT NULL ,
+            dog_size INT NOT NULL ,
+            PRIMARY KEY (user_id)
+        );`,
+        function (err, data, fields) {
+            if (err) {
+                throw new Error(err.message);
+            } else {
+                console.log({
+                    status: "success",
+                    message: "doggy_misters table created!",
+                });
+            }
+        }
+    );
